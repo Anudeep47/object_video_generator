@@ -28,8 +28,9 @@ def make_object_videos(video_path):
         for obj in objects:
             video_dict[obj].write(image)
         count += 1
-        if count == 30:
-            break
+        # Uncomment below code to only read upto 30 frames in video
+        # if count == 30:  
+        #     break
 
 if __name__ == '__main__':
     if len(sys.argv) == 2:
